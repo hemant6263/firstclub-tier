@@ -20,9 +20,9 @@ Low Level Arch:
 1. Stratergy
    Each tier qualification rule is a strategy. JsonRuleEvaluator dispatches to the right evaluation logic based on rule type.
    RuleEvaluator (interface)
-      └── JsonRuleEvaluator
-              ├── evaluates ConditionRule  → field + operator + value
-              └── evaluates CompositeRule → AND/OR of child rules
+      JsonRuleEvaluator
+              evaluates ConditionRule  → field + operator + value
+               evaluates CompositeRule → AND/OR of child rules
 2. State
   enforces valid lifecycle transitions. Invalid ones throw 409.
 
